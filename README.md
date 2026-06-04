@@ -4,7 +4,7 @@ A **provider-agnostic evaluation harness for AI-generated children's stories.** 
 
 > Inspired by work on [HeroKid](https://www.herokid.app), a live AI storytelling app for children. When an LLM writes free-text stories for a young audience, a quality regression (prose that drifts too advanced, output that breaks the render contract) is both unacceptable and easy to miss in a quick human skim. This harness catches those regressions automatically.
 
-![Regression demo: the readability check flips PASS → FAIL when a candidate model over-writes for a young reader](docs/regression-demo.png)
+[Regression demo transcript: the readability check flips PASS -> FAIL when a candidate model over-writes for a young reader](docs/regression-demo.md)
 
 _The harness catching a regression a reviewer would likely miss: a candidate model returns grammatically perfect but far-too-advanced prose for a 6-year-old, and the readability grade jumps from −0.8 to **18.7** (college level)._
 
